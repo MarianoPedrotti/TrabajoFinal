@@ -1,62 +1,54 @@
 <script setup>
-import { reactive } from 'vue'
-import { useRouter } from 'vue-router' // ⬅️ Importar router
-import { useUsuarioStore } from '../store/usuarioStore'
-import { storeToRefs } from 'pinia'
-import HaderComponet from '../components/HaderComponet.vue'
+import { reactive, ref } from 'vue';
+import { useRouter } from 'vue-router';
+import { useUsuarioStore } from '../store/usuarioNuevo';
+import { storeToRefs } from 'pinia';
+import HaderComponet from '../components/HaderComponet.vue';
 
-const router = useRouter() // ⬅️ Instanciar el router
 
-const usuarioStore = useUsuarioStore()
-const { usuarioLogeado, nombreUsuario } = storeToRefs(usuarioStore)
-const { registrarUsuario, iniciarSesion, cerrarSesion } = usuarioStore
-
-const registro = reactive({
-  nombre: '',
-  email: '',
-  password: '',
-  pesosArg: 1000000
-})
-
-const login = reactive({
-  email: '',
-  password: ''
-})
-
+const router = useRouter();
+const usuarioStore = useUsuarioStore();
+const { usuarioLogeado} = storeToRefs(usuarioStore);
 async function registrarNuevoUsuario() {
-  await registrarUsuario(
-    registro.nombre,
-    registro.email,
-    registro.password,
-    registro.pesosArg
-  )
-
-  registro.nombre = ''
-  registro.email = ''
-  registro.password = ''
-}
-
-async function iniciarSesionUsuario() {
   try {
-    await iniciarSesion(login.email, login.password)
+    useUsuarioStore.adduser(
+      user.email,
+      user.password
+    )
+    useUsuarioStore.logueado = true
 
-    // 🔁 Redirige solo si el login fue exitoso
+    alert('Usuario registrado con éxito')
+
+    // Redirigir al login
+    await iniciarSesion(user.email, user.password)
     router.push('/CompraVenta')
-  } catch (error) {
-    alert('Email o contraseña incorrectos')
+
+    // Limpiar
+    
+    user.email = ''
+    user.password = ''
+  } catch (err) {
+    alert(err.message)
   }
 
-  login.email = ''
-  login.password = ''
+  const user = ref({
+    email: '',
+    password: ''
+  });
 }
+async function iniciarSesionUsuario() {
+  
+const login = ref({
+  email: '',
+  password: ''
+});}
 </script>
-
 <template>
   <HaderComponet />
 
   <div v-if="usuarioLogeado">
-    <h2>¡Hola, {{ nombreUsuario }}! Ya estás logueado ✅</h2>
-    <button @click="cerrarSesion">Cerrar sesión</button>
+    <h2>¡Hola Ya estás logueado ✅</h2>
+    <button @click="cerrarSesionUsuario">Cerrar sesión</button>
     <br /><br />
     <router-link to="/CompraVenta"><button>Compra | Vender</button></router-link>
     <router-link to="/Historial"><button>Ver Historial</button></router-link>
@@ -66,22 +58,21 @@ async function iniciarSesionUsuario() {
     <div id="registro-usuario">
       <form @submit.prevent="registrarNuevoUsuario">
         <h1>Registro de Usuario</h1>
-        <label for="nombre">Nombre:</label>
-        <input type="text" id="nombre" v-model="registro.nombre" required />
 
         <label for="email">Email:</label>
-        <input type="email" id="email" v-model="registro.email" required />
+        <input type="email" id="email" v-model="user.email" required />
 
         <label for="password">Contraseña:</label>
-        <input type="password" id="password" v-model="registro.password" required />
+        <input type="password" id="password" v-model="user.password" required />
 
         <button type="submit">Registrar</button>
       </form>
-    </div>
+    </div>  
 
     <div id="iniciar-sesion" style="margin-top: 2rem">
       <form @submit.prevent="iniciarSesionUsuario">
         <h1>Iniciar Sesión</h1>
+
         <label for="email-login">Email:</label>
         <input type="email" id="email-login" v-model="login.email" required />
 
@@ -93,27 +84,3 @@ async function iniciarSesionUsuario() {
     </div>
   </div>
 </template>
-
-<style scoped>
-form {
-  margin-bottom: 2rem;
-  padding: 1rem;
-  border: 1px solid #ccc;
-  max-width: 400px;
-}
-
-label {
-  display: block;
-  margin: 0.5rem 0 0.2rem;
-}
-
-input {
-  width: 100%;
-  padding: 0.4rem;
-  margin-bottom: 1rem;
-}
-
-button {
-  padding: 0.5rem 1rem;
-}
-</style>

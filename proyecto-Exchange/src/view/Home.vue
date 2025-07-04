@@ -51,6 +51,8 @@ async function iniciarSesionUsuario() {
 </script>
 
 <template>
+ <h1>Hola desde Home</h1>.
+
   <HaderComponet />
 
   <div v-if="logueado">
