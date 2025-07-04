@@ -1,0 +1,350 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Pc\\Desktop\\NuevoBackend\\webApi\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{DB51108C-17FB-4594-B98C-23746029518C}|webApi\\webApi.csproj|c:\\users\\pc\\desktop\\nuevobackend\\webapi\\webapi\\migrations\\appdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DB51108C-17FB-4594-B98C-23746029518C}|webApi\\webApi.csproj|solutionrelative:webapi\\migrations\\appdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB51108C-17FB-4594-B98C-23746029518C}|webApi\\webApi.csproj|c:\\users\\pc\\desktop\\nuevobackend\\webapi\\webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DB51108C-17FB-4594-B98C-23746029518C}|webApi\\webApi.csproj|solutionrelative:webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB51108C-17FB-4594-B98C-23746029518C}|webApi\\webApi.csproj|c:\\users\\pc\\desktop\\nuevobackend\\webapi\\webapi\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DB51108C-17FB-4594-B98C-23746029518C}|webApi\\webApi.csproj|solutionrelative:webapi\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB51108C-17FB-4594-B98C-23746029518C}|webApi\\webApi.csproj|c:\\users\\pc\\desktop\\nuevobackend\\webapi\\webapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{DB51108C-17FB-4594-B98C-23746029518C}|webApi\\webApi.csproj|solutionrelative:webapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Pc\\Desktop\\NuevoBackend\\webApi\\webApi\\Migrations\\20250704022410_6.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:webApi\\Migrations\\20250704022410_6.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB51108C-17FB-4594-B98C-23746029518C}|webApi\\webApi.csproj|c:\\users\\pc\\desktop\\nuevobackend\\webapi\\webapi\\models\\transaccion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DB51108C-17FB-4594-B98C-23746029518C}|webApi\\webApi.csproj|solutionrelative:webapi\\models\\transaccion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB51108C-17FB-4594-B98C-23746029518C}|webApi\\webApi.csproj|c:\\users\\pc\\desktop\\nuevobackend\\webapi\\webapi\\models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DB51108C-17FB-4594-B98C-23746029518C}|webApi\\webApi.csproj|solutionrelative:webapi\\models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB51108C-17FB-4594-B98C-23746029518C}|webApi\\webApi.csproj|c:\\users\\pc\\desktop\\nuevobackend\\webapi\\webapi\\controllers\\usuarioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DB51108C-17FB-4594-B98C-23746029518C}|webApi\\webApi.csproj|solutionrelative:webapi\\controllers\\usuarioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB51108C-17FB-4594-B98C-23746029518C}|webApi\\webApi.csproj|c:\\users\\pc\\desktop\\nuevobackend\\webapi\\webapi\\controllers\\transaccionescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DB51108C-17FB-4594-B98C-23746029518C}|webApi\\webApi.csproj|solutionrelative:webapi\\controllers\\transaccionescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB51108C-17FB-4594-B98C-23746029518C}|webApi\\webApi.csproj|c:\\users\\pc\\desktop\\nuevobackend\\webapi\\webapi\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DB51108C-17FB-4594-B98C-23746029518C}|webApi\\webApi.csproj|solutionrelative:webapi\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB51108C-17FB-4594-B98C-23746029518C}|webApi\\webApi.csproj|c:\\users\\pc\\desktop\\nuevobackend\\webapi\\webapi\\controllers\\monedascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DB51108C-17FB-4594-B98C-23746029518C}|webApi\\webApi.csproj|solutionrelative:webapi\\controllers\\monedascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB51108C-17FB-4594-B98C-23746029518C}|webApi\\webApi.csproj|c:\\users\\pc\\desktop\\nuevobackend\\webapi\\webapi\\controllers\\cotizacioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DB51108C-17FB-4594-B98C-23746029518C}|webApi\\webApi.csproj|solutionrelative:webapi\\controllers\\cotizacioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB51108C-17FB-4594-B98C-23746029518C}|webApi\\webApi.csproj|c:\\users\\pc\\desktop\\nuevobackend\\webapi\\webapi\\models\\moneda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DB51108C-17FB-4594-B98C-23746029518C}|webApi\\webApi.csproj|solutionrelative:webapi\\models\\moneda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB51108C-17FB-4594-B98C-23746029518C}|webApi\\webApi.csproj|c:\\users\\pc\\desktop\\nuevobackend\\webapi\\webapi\\service\\criptoyaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DB51108C-17FB-4594-B98C-23746029518C}|webApi\\webApi.csproj|solutionrelative:webapi\\service\\criptoyaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Pc\\Desktop\\NuevoBackend\\webApi\\webApi\\Migrations\\20250702065637_conirmacion-elimncon.email.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:webApi\\Migrations\\20250702065637_conirmacion-elimncon.email.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Pc\\Desktop\\NuevoBackend\\webApi\\webApi\\Migrations\\20250702065201_marchaAtrasConEmail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:webApi\\Migrations\\20250702065201_marchaAtrasConEmail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Pc\\Desktop\\NuevoBackend\\webApi\\webApi\\Migrations\\20250702025928_cambioTrnaccion-agregoEmail-filta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:webApi\\Migrations\\20250702025928_cambioTrnaccion-agregoEmail-filta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB51108C-17FB-4594-B98C-23746029518C}|webApi\\webApi.csproj|c:\\users\\pc\\desktop\\nuevobackend\\webapi\\webapi\\webapi.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{DB51108C-17FB-4594-B98C-23746029518C}|webApi\\webApi.csproj|solutionrelative:webapi\\webapi.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB51108C-17FB-4594-B98C-23746029518C}|webApi\\webApi.csproj|c:\\users\\pc\\desktop\\nuevobackend\\webapi\\webapi\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DB51108C-17FB-4594-B98C-23746029518C}|webApi\\webApi.csproj|solutionrelative:webapi\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AppDbContextModelSnapshot.cs",
+              "DocumentMoniker": "C:\\Users\\Pc\\Desktop\\NuevoBackend\\webApi\\webApi\\Migrations\\AppDbContextModelSnapshot.cs",
+              "RelativeDocumentMoniker": "webApi\\Migrations\\AppDbContextModelSnapshot.cs",
+              "ToolTip": "C:\\Users\\Pc\\Desktop\\NuevoBackend\\webApi\\webApi\\Migrations\\AppDbContextModelSnapshot.cs",
+              "RelativeToolTip": "webApi\\Migrations\\AppDbContextModelSnapshot.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAJEAAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-04T02:44:53.964Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Pc\\Desktop\\NuevoBackend\\webApi\\webApi\\Data\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "webApi\\Data\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\Pc\\Desktop\\NuevoBackend\\webApi\\webApi\\Data\\AppDbContext.cs",
+              "RelativeToolTip": "webApi\\Data\\AppDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-01T23:02:34.932Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Transaccion.cs",
+              "DocumentMoniker": "C:\\Users\\Pc\\Desktop\\NuevoBackend\\webApi\\webApi\\Models\\Transaccion.cs",
+              "RelativeDocumentMoniker": "webApi\\Models\\Transaccion.cs",
+              "ToolTip": "C:\\Users\\Pc\\Desktop\\NuevoBackend\\webApi\\webApi\\Models\\Transaccion.cs",
+              "RelativeToolTip": "webApi\\Models\\Transaccion.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-01T22:47:40.61Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Usuario.cs",
+              "DocumentMoniker": "C:\\Users\\Pc\\Desktop\\NuevoBackend\\webApi\\webApi\\Models\\Usuario.cs",
+              "RelativeDocumentMoniker": "webApi\\Models\\Usuario.cs",
+              "ToolTip": "C:\\Users\\Pc\\Desktop\\NuevoBackend\\webApi\\webApi\\Models\\Usuario.cs",
+              "RelativeToolTip": "webApi\\Models\\Usuario.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-04T01:05:34.051Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\Pc\\Desktop\\NuevoBackend\\webApi\\webApi\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "webApi\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\Pc\\Desktop\\NuevoBackend\\webApi\\webApi\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "webApi\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAwAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-01T23:06:31.546Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "MonedasController.cs",
+              "DocumentMoniker": "C:\\Users\\Pc\\Desktop\\NuevoBackend\\webApi\\webApi\\Controllers\\MonedasController.cs",
+              "RelativeDocumentMoniker": "webApi\\Controllers\\MonedasController.cs",
+              "ToolTip": "C:\\Users\\Pc\\Desktop\\NuevoBackend\\webApi\\webApi\\Controllers\\MonedasController.cs",
+              "RelativeToolTip": "webApi\\Controllers\\MonedasController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-01T22:59:44.322Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Pc\\Desktop\\NuevoBackend\\webApi\\webApi\\Program.cs",
+              "RelativeDocumentMoniker": "webApi\\Program.cs",
+              "ToolTip": "C:\\Users\\Pc\\Desktop\\NuevoBackend\\webApi\\webApi\\Program.cs",
+              "RelativeToolTip": "webApi\\Program.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAACIAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-01T22:45:55.634Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Pc\\Desktop\\NuevoBackend\\webApi\\webApi\\appsettings.json",
+              "RelativeDocumentMoniker": "webApi\\appsettings.json",
+              "ToolTip": "C:\\Users\\Pc\\Desktop\\NuevoBackend\\webApi\\webApi\\appsettings.json",
+              "RelativeToolTip": "webApi\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-07-01T22:46:31.722Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "20250704022410_6.cs",
+              "DocumentMoniker": "C:\\Users\\Pc\\Desktop\\NuevoBackend\\webApi\\webApi\\Migrations\\20250704022410_6.cs",
+              "RelativeDocumentMoniker": "webApi\\Migrations\\20250704022410_6.cs",
+              "ToolTip": "C:\\Users\\Pc\\Desktop\\NuevoBackend\\webApi\\webApi\\Migrations\\20250704022410_6.cs",
+              "RelativeToolTip": "webApi\\Migrations\\20250704022410_6.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-04T02:24:10.883Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "TransaccionesController.cs",
+              "DocumentMoniker": "C:\\Users\\Pc\\Desktop\\NuevoBackend\\webApi\\webApi\\Controllers\\TransaccionesController.cs",
+              "RelativeDocumentMoniker": "webApi\\Controllers\\TransaccionesController.cs",
+              "ToolTip": "C:\\Users\\Pc\\Desktop\\NuevoBackend\\webApi\\webApi\\Controllers\\TransaccionesController.cs",
+              "RelativeToolTip": "webApi\\Controllers\\TransaccionesController.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAACUAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-01T23:00:53.63Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "UsuariosController.cs",
+              "DocumentMoniker": "C:\\Users\\Pc\\Desktop\\NuevoBackend\\webApi\\webApi\\Controllers\\UsuariosController.cs",
+              "RelativeDocumentMoniker": "webApi\\Controllers\\UsuariosController.cs",
+              "ToolTip": "C:\\Users\\Pc\\Desktop\\NuevoBackend\\webApi\\webApi\\Controllers\\UsuariosController.cs",
+              "RelativeToolTip": "webApi\\Controllers\\UsuariosController.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABQAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-04T01:08:42.274Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Moneda.cs",
+              "DocumentMoniker": "C:\\Users\\Pc\\Desktop\\NuevoBackend\\webApi\\webApi\\Models\\Moneda.cs",
+              "RelativeDocumentMoniker": "webApi\\Models\\Moneda.cs",
+              "ToolTip": "C:\\Users\\Pc\\Desktop\\NuevoBackend\\webApi\\webApi\\Models\\Moneda.cs",
+              "RelativeToolTip": "webApi\\Models\\Moneda.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-01T22:47:07.03Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "CotizacionController.cs",
+              "DocumentMoniker": "C:\\Users\\Pc\\Desktop\\NuevoBackend\\webApi\\webApi\\Controllers\\CotizacionController.cs",
+              "RelativeDocumentMoniker": "webApi\\Controllers\\CotizacionController.cs",
+              "ToolTip": "C:\\Users\\Pc\\Desktop\\NuevoBackend\\webApi\\webApi\\Controllers\\CotizacionController.cs",
+              "RelativeToolTip": "webApi\\Controllers\\CotizacionController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-02T05:40:45.566Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "CriptoYaService.cs",
+              "DocumentMoniker": "C:\\Users\\Pc\\Desktop\\NuevoBackend\\webApi\\webApi\\Service\\CriptoYaService.cs",
+              "RelativeDocumentMoniker": "webApi\\Service\\CriptoYaService.cs",
+              "ToolTip": "C:\\Users\\Pc\\Desktop\\NuevoBackend\\webApi\\webApi\\Service\\CriptoYaService.cs",
+              "RelativeToolTip": "webApi\\Service\\CriptoYaService.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAQwCMAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-01T22:56:55.18Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "20250702065637_conirmacion-elimncon.email.cs",
+              "DocumentMoniker": "C:\\Users\\Pc\\Desktop\\NuevoBackend\\webApi\\webApi\\Migrations\\20250702065637_conirmacion-elimncon.email.cs",
+              "RelativeDocumentMoniker": "webApi\\Migrations\\20250702065637_conirmacion-elimncon.email.cs",
+              "ToolTip": "C:\\Users\\Pc\\Desktop\\NuevoBackend\\webApi\\webApi\\Migrations\\20250702065637_conirmacion-elimncon.email.cs",
+              "RelativeToolTip": "webApi\\Migrations\\20250702065637_conirmacion-elimncon.email.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-02T06:56:37.365Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "20250702065201_marchaAtrasConEmail.cs",
+              "DocumentMoniker": "C:\\Users\\Pc\\Desktop\\NuevoBackend\\webApi\\webApi\\Migrations\\20250702065201_marchaAtrasConEmail.cs",
+              "RelativeDocumentMoniker": "webApi\\Migrations\\20250702065201_marchaAtrasConEmail.cs",
+              "ToolTip": "C:\\Users\\Pc\\Desktop\\NuevoBackend\\webApi\\webApi\\Migrations\\20250702065201_marchaAtrasConEmail.cs",
+              "RelativeToolTip": "webApi\\Migrations\\20250702065201_marchaAtrasConEmail.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-02T06:52:02.003Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "20250702025928_cambioTrnaccion-agregoEmail-filta.cs",
+              "DocumentMoniker": "C:\\Users\\Pc\\Desktop\\NuevoBackend\\webApi\\webApi\\Migrations\\20250702025928_cambioTrnaccion-agregoEmail-filta.cs",
+              "RelativeDocumentMoniker": "webApi\\Migrations\\20250702025928_cambioTrnaccion-agregoEmail-filta.cs",
+              "ToolTip": "C:\\Users\\Pc\\Desktop\\NuevoBackend\\webApi\\webApi\\Migrations\\20250702025928_cambioTrnaccion-agregoEmail-filta.cs",
+              "RelativeToolTip": "webApi\\Migrations\\20250702025928_cambioTrnaccion-agregoEmail-filta.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-02T02:59:28.719Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "webApi",
+              "DocumentMoniker": "C:\\Users\\Pc\\Desktop\\NuevoBackend\\webApi\\webApi\\webApi.csproj",
+              "RelativeDocumentMoniker": "webApi\\webApi.csproj",
+              "ToolTip": "C:\\Users\\Pc\\Desktop\\NuevoBackend\\webApi\\webApi\\webApi.csproj",
+              "RelativeToolTip": "webApi\\webApi.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-07-01T23:14:19.975Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "ErrorViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Pc\\Desktop\\NuevoBackend\\webApi\\webApi\\Models\\ErrorViewModel.cs",
+              "RelativeDocumentMoniker": "webApi\\Models\\ErrorViewModel.cs",
+              "ToolTip": "C:\\Users\\Pc\\Desktop\\NuevoBackend\\webApi\\webApi\\Models\\ErrorViewModel.cs",
+              "RelativeToolTip": "webApi\\Models\\ErrorViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-01T23:09:51.813Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

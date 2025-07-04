@@ -1,0 +1,190 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Pc\\Desktop\\NuevoBackend\\Final\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{793D3128-A30E-4C65-9160-659686E511DC}|Final\\Final.csproj|c:\\users\\pc\\desktop\\nuevobackend\\final\\final\\controllers\\transactionscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{793D3128-A30E-4C65-9160-659686E511DC}|Final\\Final.csproj|solutionrelative:final\\controllers\\transactionscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{793D3128-A30E-4C65-9160-659686E511DC}|Final\\Final.csproj|c:\\users\\pc\\desktop\\nuevobackend\\final\\final\\models\\transaccion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{793D3128-A30E-4C65-9160-659686E511DC}|Final\\Final.csproj|solutionrelative:final\\models\\transaccion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{793D3128-A30E-4C65-9160-659686E511DC}|Final\\Final.csproj|c:\\users\\pc\\desktop\\nuevobackend\\final\\final\\service\\criptoyaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{793D3128-A30E-4C65-9160-659686E511DC}|Final\\Final.csproj|solutionrelative:final\\service\\criptoyaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{793D3128-A30E-4C65-9160-659686E511DC}|Final\\Final.csproj|c:\\users\\pc\\desktop\\nuevobackend\\final\\final\\controllers\\cotizacioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{793D3128-A30E-4C65-9160-659686E511DC}|Final\\Final.csproj|solutionrelative:final\\controllers\\cotizacioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{793D3128-A30E-4C65-9160-659686E511DC}|Final\\Final.csproj|c:\\users\\pc\\desktop\\nuevobackend\\final\\final\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{793D3128-A30E-4C65-9160-659686E511DC}|Final\\Final.csproj|solutionrelative:final\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{793D3128-A30E-4C65-9160-659686E511DC}|Final\\Final.csproj|c:\\users\\pc\\desktop\\nuevobackend\\final\\final\\models\\moneda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{793D3128-A30E-4C65-9160-659686E511DC}|Final\\Final.csproj|solutionrelative:final\\models\\moneda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{793D3128-A30E-4C65-9160-659686E511DC}|Final\\Final.csproj|c:\\users\\pc\\desktop\\nuevobackend\\final\\final\\migrations\\20250704081929_prmera.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{793D3128-A30E-4C65-9160-659686E511DC}|Final\\Final.csproj|solutionrelative:final\\migrations\\20250704081929_prmera.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{793D3128-A30E-4C65-9160-659686E511DC}|Final\\Final.csproj|c:\\users\\pc\\desktop\\nuevobackend\\final\\final\\controllers\\monedascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{793D3128-A30E-4C65-9160-659686E511DC}|Final\\Final.csproj|solutionrelative:final\\controllers\\monedascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{793D3128-A30E-4C65-9160-659686E511DC}|Final\\Final.csproj|c:\\users\\pc\\desktop\\nuevobackend\\final\\final\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{793D3128-A30E-4C65-9160-659686E511DC}|Final\\Final.csproj|solutionrelative:final\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{793D3128-A30E-4C65-9160-659686E511DC}|Final\\Final.csproj|c:\\users\\pc\\desktop\\nuevobackend\\final\\final\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{793D3128-A30E-4C65-9160-659686E511DC}|Final\\Final.csproj|solutionrelative:final\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Pc\\Desktop\\NuevoBackend\\Final\\Final\\Program.cs",
+              "RelativeDocumentMoniker": "Final\\Program.cs",
+              "ToolTip": "C:\\Users\\Pc\\Desktop\\NuevoBackend\\Final\\Final\\Program.cs",
+              "RelativeToolTip": "Final\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-04T08:03:04.92Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Pc\\Desktop\\NuevoBackend\\Final\\Final\\appsettings.json",
+              "RelativeDocumentMoniker": "Final\\appsettings.json",
+              "ToolTip": "C:\\Users\\Pc\\Desktop\\NuevoBackend\\Final\\Final\\appsettings.json",
+              "RelativeToolTip": "Final\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-07-04T08:03:17.853Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "MonedasController.cs",
+              "DocumentMoniker": "C:\\Users\\Pc\\Desktop\\NuevoBackend\\Final\\Final\\Controllers\\MonedasController.cs",
+              "RelativeDocumentMoniker": "Final\\Controllers\\MonedasController.cs",
+              "ToolTip": "C:\\Users\\Pc\\Desktop\\NuevoBackend\\Final\\Final\\Controllers\\MonedasController.cs",
+              "RelativeToolTip": "Final\\Controllers\\MonedasController.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAIA0wBsAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-04T08:07:34.705Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CotizacionController.cs",
+              "DocumentMoniker": "C:\\Users\\Pc\\Desktop\\NuevoBackend\\Final\\Final\\Controllers\\CotizacionController.cs",
+              "RelativeDocumentMoniker": "Final\\Controllers\\CotizacionController.cs",
+              "ToolTip": "C:\\Users\\Pc\\Desktop\\NuevoBackend\\Final\\Final\\Controllers\\CotizacionController.cs",
+              "RelativeToolTip": "Final\\Controllers\\CotizacionController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-04T08:09:04.447Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "TransactionsController.cs",
+              "DocumentMoniker": "C:\\Users\\Pc\\Desktop\\NuevoBackend\\Final\\Final\\Controllers\\TransactionsController.cs",
+              "RelativeDocumentMoniker": "Final\\Controllers\\TransactionsController.cs",
+              "ToolTip": "C:\\Users\\Pc\\Desktop\\NuevoBackend\\Final\\Final\\Controllers\\TransactionsController.cs",
+              "RelativeToolTip": "Final\\Controllers\\TransactionsController.cs",
+              "ViewState": "AgIAAJgAAAAAAAAAAAAwwLcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-04T08:08:14.086Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Moneda.cs",
+              "DocumentMoniker": "C:\\Users\\Pc\\Desktop\\NuevoBackend\\Final\\Final\\Models\\Moneda.cs",
+              "RelativeDocumentMoniker": "Final\\Models\\Moneda.cs",
+              "ToolTip": "C:\\Users\\Pc\\Desktop\\NuevoBackend\\Final\\Final\\Models\\Moneda.cs",
+              "RelativeToolTip": "Final\\Models\\Moneda.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-04T08:04:56.906Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CriptoYaService.cs",
+              "DocumentMoniker": "C:\\Users\\Pc\\Desktop\\NuevoBackend\\Final\\Final\\Service\\CriptoYaService.cs",
+              "RelativeDocumentMoniker": "Final\\Service\\CriptoYaService.cs",
+              "ToolTip": "C:\\Users\\Pc\\Desktop\\NuevoBackend\\Final\\Final\\Service\\CriptoYaService.cs",
+              "RelativeToolTip": "Final\\Service\\CriptoYaService.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAgwB4AAABoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-04T08:04:06.866Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Transaccion.cs",
+              "DocumentMoniker": "C:\\Users\\Pc\\Desktop\\NuevoBackend\\Final\\Final\\Models\\Transaccion.cs",
+              "RelativeDocumentMoniker": "Final\\Models\\Transaccion.cs",
+              "ToolTip": "C:\\Users\\Pc\\Desktop\\NuevoBackend\\Final\\Final\\Models\\Transaccion.cs",
+              "RelativeToolTip": "Final\\Models\\Transaccion.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-04T08:05:16.93Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "20250704081929_prmera.cs",
+              "DocumentMoniker": "C:\\Users\\Pc\\Desktop\\NuevoBackend\\Final\\Final\\Migrations\\20250704081929_prmera.cs",
+              "RelativeDocumentMoniker": "Final\\Migrations\\20250704081929_prmera.cs",
+              "ToolTip": "C:\\Users\\Pc\\Desktop\\NuevoBackend\\Final\\Final\\Migrations\\20250704081929_prmera.cs",
+              "RelativeToolTip": "Final\\Migrations\\20250704081929_prmera.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAxwBoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-04T08:19:30.533Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Pc\\Desktop\\NuevoBackend\\Final\\Final\\Data\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "Final\\Data\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\Pc\\Desktop\\NuevoBackend\\Final\\Final\\Data\\AppDbContext.cs",
+              "RelativeToolTip": "Final\\Data\\AppDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-04T08:04:47.604Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
