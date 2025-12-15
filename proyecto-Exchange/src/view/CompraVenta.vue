@@ -2,6 +2,7 @@
 import { ref, onMounted, watch, computed } from 'vue'
 import { useUsuarioStore } from '../store/usuarioStore'
 import { useTransaccionStore } from '../store/transaccion'
+import { useMonedaStore } from '../store/monedas'
 import { useRouter } from 'vue-router'
 
 const router = useRouter()
@@ -10,13 +11,17 @@ const router = useRouter()
 // Stores
 const usuarioStore = useUsuarioStore()
 const transaccionStore = useTransaccionStore()
+const monedaStore = useMonedaStore()
 
 // Estado
-const monedas = ref([])
+const monedas = monedaStore.monedas
 const monedaSeleccionada = ref(null)
 const cantidad = ref(0)
 const tipoOperacion = ref('purchase')
 const cotizacion = ref(0)
+
+// Diagnóstico de cotizaciones
+const diag = ref({ lastAbrev: null, lastTipo: null, rawData: null, chosenPrice: null, notes: [] })
 
 // Total en pesos
 const totalEstimado = computed(() => cotizacion.value * cantidad.value)
@@ -78,12 +83,25 @@ const realizadaTransaccion = async () => {
   }
 }
 
-// Cargar monedas
+// Cargar monedas desde la store
 onMounted(async () => {
   try {
-    const res = await fetch('https://localhost:7149/monedas')
-    monedas.value = await res.json()
-    monedaSeleccionada.value = monedas.value[0] || null
+    const ok = await monedaStore.cargarMonedas()
+    console.log('cargarMonedas ok:', ok, 'monedaStore.monedas raw:', monedaStore.monedas)
+
+    // Detecto si monedaStore.monedas es un array directo o un ref que contiene un array
+    const lista = Array.isArray(monedaStore.monedas)
+      ? monedaStore.monedas
+      : (Array.isArray(monedaStore.monedas?.value) ? monedaStore.monedas.value : [])
+
+    const first = lista[0] ?? null
+    if (ok && first) {
+      monedaSeleccionada.value = first
+      console.log('monedaSeleccionada seteada:', monedaSeleccionada.value)
+    } else {
+      monedaSeleccionada.value = null
+      console.error('No se pudieron cargar las monedas desde la API o la lista está vacía', { ok, first, monedas: lista })
+    }
   } catch (error) {
     console.error('Error al cargar monedas:', error)
   }
@@ -91,25 +109,144 @@ onMounted(async () => {
 
 // Cotización al cambiar
 watch([monedaSeleccionada, tipoOperacion], async () => {
-  if (monedaSeleccionada.value) {
+  if (monedaSeleccionada.value && monedaSeleccionada.value.abreviatura) {
     const abrev = monedaSeleccionada.value.abreviatura.toLowerCase()
     try {
       const res = await fetch(`https://criptoya.com/api/satoshitango/${abrev}/ars`)
       const data = await res.json()
 
-      // Validar que venga bien
-      const cotiza = data.totalAsk || data.totalBid || 0
+      // Log para diagnóstico
+      console.log('Cotización criptoya:', { abrev, tipo: tipoOperacion.value, data })
 
-      if (cotiza > 0 && cotiza < 10_000_000) {
-        cotizacion.value = cotiza
+      // Guardar raw en diag
+      diag.value.lastAbrev = abrev
+      diag.value.lastTipo = tipoOperacion.value
+      diag.value.rawData = data
+      diag.value.notes = []
+
+      // Helpers
+      const parseFlexibleNumber = (v) => {
+        if (typeof v === 'number') return v
+        if (!v && v !== 0) return null
+        let s = String(v).trim()
+        // Si tiene ambos separadores, quitar comas (miles)
+        if (s.includes('.') && s.includes(',')) s = s.replace(/,/g, '')
+        else if (s.includes(',') && !s.includes('.')) s = s.replace(',', '.')
+        // Quitar cualquier caracter que no sea dígito, punto, signo o exponente
+        s = s.replace(/[^0-9+\-\.eE]/g, '')
+        const n = Number(s)
+        return Number.isFinite(n) ? n : null
+      }
+
+      const attemptScales = (n) => {
+        // si n está en rango plausible en ARS, devolverlo. Aumentamos límite superior a 1e9
+        if (n > 0 && n < 1_000_000_000) return n
+        // probar divisores si es muy grande (pero preferir no reducir si posible)
+        const divisores = [10, 100, 1000, 10000, 100000, 1e6, 1e8]
+        for (const d of divisores) {
+          const v = n / d
+          if (v > 0 && v < 1_000_000_000) {
+            diag.value.notes.push(`Scaled by /${d}: ${n} -> ${v}`)
+            return v
+          }
+        }
+        // probar multiplicadores si muy pequeño positivo
+        const multiplicadores = [10, 100, 1000, 1000000, 1e8]
+        for (const m of multiplicadores) {
+          const v = n * m
+          if (v > 0 && v < 1_000_000_000) {
+            diag.value.notes.push(`Scaled by *${m}: ${n} -> ${v}`)
+            return v
+          }
+        }
+        return null
+      }
+
+      const findCandidate = (obj, keys) => {
+        for (const k of keys) {
+          if (!obj) continue
+          // permitir campos anidados simples
+          const raw = obj[k]
+          const parsed = parseFlexibleNumber(raw)
+          if (parsed !== null) {
+            const normalized = attemptScales(parsed)
+            if (normalized !== null) {
+              diag.value.notes.push(`Field ${k} -> raw=${raw} parsed=${parsed} norm=${normalized}`)
+              return normalized
+            } else {
+              diag.value.notes.push(`Field ${k} -> raw=${raw} parsed=${parsed} (fuera de rango)`)
+            }
+          }
+        }
+        return null
+      }
+
+      // Priorizar campos más 'standard' (ask/bid) antes de los agregados totalAsk/totalBid
+      const candidatesOrder = [
+        ['ask', 'totalAsk', 'sell'],
+        ['bid', 'totalBid', 'buy'],
+        ['last', 'price']
+      ]
+
+      // Guardar campo elegido para transparencia
+      let chosenField = null
+
+      let precio = null
+
+      if (tipoOperacion.value === 'purchase') {
+        for (const keys of candidatesOrder) {
+          const found = findCandidate(data, keys)
+          if (found) {
+            precio = found
+            chosenField = keys.find(k => Object.prototype.hasOwnProperty.call(data, k)) || null
+            break
+          }
+        }
+      } else {
+        // venta: invertir prioridad
+        for (const keys of [candidatesOrder[1], candidatesOrder[0], candidatesOrder[2]]) {
+          const found = findCandidate(data, keys)
+          if (found) {
+            precio = found
+            chosenField = keys.find(k => Object.prototype.hasOwnProperty.call(data, k)) || null
+            break
+          }
+        }
+      }
+
+      // último recurso: revisar todo el objeto
+      if (!precio) {
+        for (const k in data) {
+          const parsed = parseFlexibleNumber(data[k])
+          if (parsed !== null) {
+            const norm = attemptScales(parsed)
+            if (norm !== null) {
+              diag.value.notes.push(`Field ${k} (fallback) -> raw=${data[k]} parsed=${parsed} norm=${norm}`)
+              precio = norm
+              chosenField = k
+              break
+            }
+          }
+        }
+      }
+
+      if (precio && precio > 0 && precio < 10_000_000) {
+        cotizacion.value = precio
+        diag.value.chosenPrice = precio
+        diag.value.sourceField = chosenField
+        console.log('Precio elegido:', precio, 'campo:', chosenField)
       } else {
         cotizacion.value = 0
-        alert('Cotización inválida o no disponible')
+        diag.value.chosenPrice = null
+        diag.value.sourceField = chosenField
+        console.warn('Cotización inválida o no disponible para', abrev, 'data:', data)
       }
     } catch (error) {
       console.error('Error al obtener cotización desde CriptoYa:', error)
       cotizacion.value = 0
     }
+  } else {
+    cotizacion.value = 0
   }
 })
 
@@ -149,13 +286,30 @@ watch([monedaSeleccionada, tipoOperacion], async () => {
     </div>
 
     <div class="info">
-      <p><strong>Cotización actual:</strong> ${{ cotizacion.toFixed(2) }}</p>
+      <p><strong>Cotización actual:</strong> ${{ cotizacion > 0 ? cotizacion.toFixed(2) : 'N/D' }}</p>
       <p><strong>Total estimado:</strong> ${{ totalEstimado.toFixed(2) }}</p>
       <p><strong>Saldo en pesos:</strong> ${{ usuarioStore.usuario.saldoPesos.toFixed(2) }}</p>
       <p>
-        <strong>{{ monedaSeleccionada?.abreviatura.toUpperCase() }} disponible:</strong>
-        {{ usuarioStore.usuario[monedaSeleccionada?.abreviatura.toLowerCase()] || 0 }}
+        <strong>{{ monedaSeleccionada && monedaSeleccionada.abreviatura ? monedaSeleccionada.abreviatura.toUpperCase() : '' }} disponible:</strong>
+        {{ monedaSeleccionada && monedaSeleccionada.abreviatura ? (usuarioStore.usuario[monedaSeleccionada.abreviatura.toLowerCase()] || 0) : 0 }}
       </p>
+
+      <!-- Panel diagnóstico (visible en desarrollo) -->
+      <details style="margin-top:8px; font-size:13px;">
+        <summary>Diagnóstico cotización</summary>
+        <div style="white-space:pre-wrap; margin-top:8px">
+          <strong>Última moneda:</strong> {{ diag.lastAbrev }} ({{ diag.lastTipo }})
+          <br />
+          <strong>Precio elegido:</strong> {{ diag.chosenPrice ?? 'N/D' }} (campo: {{ diag.sourceField ?? 'N/D' }})
+          <br />
+          <strong>Notas:</strong>
+          <div v-if="diag.notes.length===0">- sin notas</div>
+          <div v-for="(n, i) in diag.notes" :key="i">- {{ n }}</div>
+          <br />
+          <strong>Raw data:</strong>
+          <pre>{{ JSON.stringify(diag.rawData, null, 2) }}</pre>
+        </div>
+      </details>
     </div>
 
     <button @click="realizadaTransaccion">

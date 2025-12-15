@@ -51,9 +51,9 @@ async function iniciarSesionUsuario() {
 </script>
 
 <template>
- <h1>Hola desde Home</h1>.
-
   <HaderComponet />
+  <h1>Arium X</h1>.
+
 
   <div v-if="logueado">
     <h2>¡Hola, {{ usuario.nombre }}! Ya estás logueado ✅</h2>
@@ -95,3 +95,103 @@ async function iniciarSesionUsuario() {
     </div>
   </div>
 </template>
+<style scoped>
+/* ===== RESET BÁSICO ===== */
+* {
+  box-sizing: border-box;
+}
+
+/* ===== CONTENEDOR GENERAL ===== */
+h1 {
+  text-align: center;
+  margin: 2rem 0 1rem;
+  color: #0f172a;
+}
+
+/* ===== ESTADO LOGUEADO ===== */
+div[v-if] {
+  text-align: center;
+}
+
+button {
+  background-color: #0f172a;
+  color: white;
+  border: none;
+  padding: 0.6rem 1.4rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+button:hover {
+  background-color: #1e293b;
+  transform: translateY(-1px);
+}
+
+/* ===== FORMULARIOS ===== */
+#registro-usuario,
+#iniciar-sesion {
+  display: flex;
+  justify-content: center;
+}
+
+form {
+  background: white;
+  width: 100%;
+  max-width: 420px;
+  padding: 2rem;
+  border-radius: 14px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+form h1 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #0f172a;
+}
+
+/* ===== LABELS ===== */
+label {
+  display: block;
+  margin-bottom: 0.3rem;
+  font-size: 0.9rem;
+  color: #475569;
+}
+
+/* ===== INPUTS ===== */
+input {
+  width: 100%;
+  padding: 0.6rem 0.75rem;
+  margin-bottom: 1.2rem;
+  border-radius: 8px;
+  border: 1px solid #cbd5e1;
+  font-size: 0.95rem;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+input:focus {
+  outline: none;
+  border-color: #0f172a;
+  box-shadow: 0 0 0 2px rgba(15, 23, 42, 0.15);
+}
+
+/* ===== BOTÓN FORM ===== */
+form button {
+  width: 100%;
+  margin-top: 0.5rem;
+  font-size: 1rem;
+}
+
+/* ===== LINKS ===== */
+a button {
+  margin: 0.5rem;
+}
+:global(body) {
+  margin: 0;
+  min-height: 100vh;
+  background-color: #f1f5f9; /* gris claro profesional */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+</style>
